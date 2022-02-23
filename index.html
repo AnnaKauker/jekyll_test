@@ -1,7 +1,96 @@
 ---
 layout: default
 title: Homepage
+featured: 
+ -  icon: fas fa-cloud
+    description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, animi est laborum nisi ab in! Assumenda voluptatum, repudiandae impedit, corrupti vero totam ea rerum dolorem sed ab tempora voluptatibus incidunt.
+ -  icon: fas fa-sun
+    description:  corrupti vero totam ea rerum dolorem sed ab tempora voluptatibus incidunt.
+ -  icon: fas fa-cloud
+    description: idit,t laborum nisi ab in! Assumenda voluptatum, repudiandae im
+ -  icon: fas fa-sun
+    description: i est laborum nisi ab in! Assumenda voluptatum, repudiandae impedit, corrupti vero totam ea rerum dolorem sed ab tempora v
+ -  icon: fas fa-cloud
+    description: i est laborum nisi ab in! Assumenda voluptatum, repudiandae impedit, corrupti vero totam ea rerum dolorem sed ab tempora v
+ -  icon: fas fa-sun
+    description: i est laborum nisi ab in! Assumenda voluptatum, repudiandae impedit, corrupti vero totam ea rerum dolorem sed ab tempora v
 ---
 
-<section>This is page section only on the homepage</section>
-<h1>Welcome to your homepage!</h1>
+<!--------------------------------Header Element------------------->
+
+{% include header-nav.html %} 
+<header class="padded text-center grid tall-100 fixed">  
+ 
+
+<div class="col-12-middle">
+    <h3 class="font-weight-bold editable">
+        <span class="featured-text">sleep</span> like a puppy
+    </h3>
+    <h1 class="font-weight-normal">
+        the ultimate mattress solution
+    </h1>
+</div>
+</header>
+
+<!--------------------------------Gallery Section------------------>
+<section class="grid">
+
+    <div class="padded col-6-middle">
+        <h2>build to last a <span class="featured-text">lifetime</span></h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p> <p>Magni fuga atque rem ipsa architecto voluptate recusandae, ipsum nemo necessitatibus! Tempore nostrum laboriosam totam aliquam atque optio? Numquam ducimus ratione earum.</p>
+    </div>
+    <!--Background Image Bed-->
+    <div class="bg-image col-6 tall-70 bg-bed">
+    </div>
+    <!--Background Sleeping-->
+    <div class="bg-image col-6 tall-70 bg-pug"> 
+    </div>
+
+
+    <div class="padded col-6-middle">
+        <h2>so <span class="featured-text">soft</span> you'll melt</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni fuga atque rem ipsa architecto voluptate recusandae, ipsum nemo necessitatibus! Tempore nostrum laboriosam totam aliquam atque optio? Numquam ducimus ratione earum.</p>
+    </div>
+</section>
+<!--------------------------------Feature Icon Section-------------->
+<section class="bg-dark padded grid-center ">
+    <div class="padded-sm col-12 text-center">
+        <h2><span class="featured-text">Features </span>you will love</h2>
+    </div>
+
+    {% for item in page.featured %}
+    <div class="padded-sm col-3">
+        <i class="{{item.icon}}"></i>
+        <p> {{item.description}}</p>
+    </div>
+    {% endfor %}
+
+    
+</section>
+<!--------------------------------Image Section-------------->
+<section class="bg-pillow padded text-center tall-70 grid">
+    <div class="col-12-middle">
+        <h3 class="big-text"> 
+            <span class="small-text font-weight-normal">Never underestimate the power of</span>
+            <br /> a good night <span class="featured-text white-text">sleep</span>
+        </h3>
+    </div>
+</section>
+<!--------------------------------Testimonial Section-------------->
+<section class="padded-lg grid">
+    <div class="col-1 text-right">
+        <span class="quote-icon">“</span>
+    </div>
+    <div class="col-10 text-center">
+        <p class="medium-text font-weight-light">
+           I never experienced sleep like this. OMG I really love this mattress I want to buy one for every member of my family.
+        </p>
+        <p class="subtitle">A very happy customer</p>
+    </div>
+    <div class="col-1">
+        <span class="quote-icon">”</span>
+    </div>
+</section> 
+
+
+

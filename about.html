@@ -1,0 +1,61 @@
+---
+layout: default
+title: About Page
+cards:
+ -  heading: Restaurant
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptates 
+ -  heading: Restaurant
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptates 
+ -  heading: Restaurant
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores voluptates
+
+    
+    
+
+---
+
+
+    <!-----------------------------Header Element------------------->
+
+    {% include header-nav.html %} 
+    <header class="padded text-center grid tall-100"> 
+
+        <div class="col-12-middle">
+            <h3 class="font-weight-bold editable">
+                <span class="featured-text">Welcome</span> to the club
+            </h3>
+            <h1 class="font-weight-normal">
+                the softest mattress membership
+            </h1>
+        </div>
+    </header>
+
+    <section class="grid padded-2 margin-tb">
+
+        <h2 class="col-12 center"> Services </h2>
+        
+        <div class="grid-center">
+          {% for item in page.cards %}
+              <div class="col-4_sm-12 padded-05"> 
+                <div class="card bg-white">
+                  <div class="bg-image bg-restaurant square window"></div>
+                  <div class="padded">  
+                    <h3 class="center">{{item.heading}}</h3>
+                        <p>{{item.description}}</p>
+                        <ul>
+                          <li>sadasd</li>
+                            <li>{asdasd</li>
+                            <li>sdasd</li>
+                            <li>sadasdasd</li>
+                        </ul>
+                  </div>  
+                </div>
+              </div> 
+            {% endfor %}
+        </div>
+       
+      
+              
+      
+      </section>
+

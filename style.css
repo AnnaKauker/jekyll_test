@@ -1,5 +1,321 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+/*Temporary Styles for structural HTML
+
+section {
+ padding: 0.5rem;
+ border: 2px solid rgb(225,225,225)
+}*/
+
+
+
+/*----- Universal Styles and Utility classes---*/
+
+.padded     {padding:5%;}
+.padded-sm  {padding: 1rem;}
+.padded-lg  {padding:10%;}
+
+
+.tall-50 { min-height: 50vh;}
+.tall-60 { min-height: 60vh;}
+.tall-70 { min-height: 70vh;}
+.tall-80 { min-height: 80vh;}
+.tall-90 { min-height: 90vh;}
+.tall-100 { min-height: 100vh;}
+
+.bg-dark {
+ background-color: #192B37;
+ color:white;}
+ 
+/* Typography Styles*/
+
+.text-left       {text-align: left;}
+.text-center     {text-align: center;}
+.text-right      {text-align: right;}
+
+.featured-text  {color: #FFBE00;}
+.white-text     {color:white;}
+
+.font-weight-light {font-weight:200;}
+.font-weight-normal {font-weight:400;} 
+.font-weight-bold {font-weight:800;}
+
+h2 {
+             font-size: 2.5rem;
+             line-height: 1.1;
+             margin-bottom: 1rem;
+}
+
+h3 {
+             line-height: 1;
+}
+
+p {
+             font-weight: 200;
+             line-height: 1.5;
+             margin-bottom: 1rem;
+}
+
+p:last-child    {margin-bottom: 0;
+}
+
+.small-text     {font-size: 1.5rem;}
+.medium-text    {
+             font-size: 2rem;
+             line-height: 1.1;}
+.big-text       {font-size: 4.5rem;}
+
+.subtitle {
+             font-size:1.2rem;
+             color: rgb(120,120,125)}
+
+.quote-icon {
+             font-size: 6rem;
+             display: inline-block;
+             color: rgb(120,120,125);
+             line-height:1;
+}
+/*------Card------*/
+.bg-white {     background-color: white;}
+.card {         border-radius: 3rem;
+}
+.square        { padding-bottom: 100%; }
+.window {       border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem; }
+.center {       text-align: center; }
+
+
+
+/* -------Image Styles----------*/
+
+.bg-image, [class*=bg-image] {
+ background-image: url(images/sleep-co-3.jpg);
+ background-size: cover;
+ background-color: rgb(240,240,240);
+ min-height: 18rem;
+ background-position:center;
+ background-repeat: no-repeat;
+ padding-bottom: 50%;}
+
+ .portrait-tall {
+  padding-bottom: 175%;
+}
+
+.portrait {
+  padding-bottom: 134%/*125% Right One*/;
+}
+
+.landscape {
+  padding-bottom: 66%;
+}
+
+.landscape-wide {
+  padding-bottom: 56%;
+}
+
+/*---------Background Position----------- */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
+
+.bg-pos-t-l { background-position: left top; }
+.bg-pos-b-r { background-position: right bottom; }
+
+.bg-pos-t-l { background-position: 10% 10%; }
+.bg-pos-b-r { background-position: 85% 85%; }
+
+
+.gallery [class*="col-"] {
+  padding: 0.5%;
+}
+
+
+/*-----------Background Images-------*/
+
+.bg-bed {
+ background-image: url(images/sleep-co-3.jpg);
+}
+
+.bg-pug {
+ background-image: url(images/sleep-co-1.jpg);
+ background-position: 50% 35%;
+}
+
+.bg-pillow {
+ background-image: url(images/sleep-co-2.jpg);
+ background-position: 50% 57%;
+}
+
+.bg-logo {
+ background-image: url(images/schwarz.png);
+ max-width: 3rem;
+ background-size: cover;
+ background-position: 50%;
+ padding-bottom: 2rem;
+ margin-top: 1%;
+ margin-bottom: 1%;;
+}
+
+
+
+/*----Navigation Bar----*/
+
+.navigation {padding:4%;}
+
+.navigation a {
+ text-align:right;
+ border: none;
+ padding:1rem;
+ text-transform: uppercase;
+ font-weight: 600;
+ letter-spacing: 0.1rem;;
+
+}
+
+/* Mobile Menu Styles */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.mobile-menu a {
+  display: block;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+}
+
+.hamburger-button {
+  position: relative;
+  z-index: 2;
+}
+
+.hamburger-button i {
+  font-size: 2.2rem;
+  margin-bottom: 0;
+}
+
+/* General CSS Responsive Styles */
+.mobile-menu {
+  display: none;
+}
+
+
+/*---------Header Styles--------*/
+
+header {
+     background-image: url('images/sleep-co-4.jpg');
+     background-size: cover;
+     background-position: center;
+ }
+ 
+header h3 {
+ font-size: 5.5rem;
+ line-height: 1;
+}
+
+.fixed {background-attachment: fixed;}
+
+/*------Icon Styles-------*/
+
+.fas {
+ display: block;
+ text-align: center;
+ margin-bottom: 2rem;
+ font-size: 3rem;}
+
+/*---------Links-----*/
+
+a {
+ text-decoration: none;
+ color:inherit;
+ border-bottom: 1px solid;
+}
+
+a:hover {
+ color: #FFBE00;
+}
+
+footer a {
+border:none;
+}
+
+/*-------------Form-----------*/
+
+input, textarea {
+ border-style: solid;
+ border: 2px solid rgb(200, 200, 205);
+ padding: 0.8em;
+ display: block;
+ width: 100%;
+ font-size: 1rem;
+ vertical-align: top;
+}
+
+input:focus,
+textarea:focus {
+ outline: none;
+ border: 2px solid #e67e22;
+ /* featured color */
+}
+
+textarea {
+ min-height: 7em;
+}
+
+input[type="submit"] {
+ width: auto;
+ display: block;
+}
+
+form [class*=col-] {
+ padding: 5px;
+}
+
+.email-signup input {
+ width: 30%;
+ display: inline-block;
+ max-width: 250px;
+ margin-top:1rem;
+}
+
+.email-signup .button-solid {
+ padding: 0.8em;
+ border-radius: 0;
+ font-size: 1rem;
+}
+form .button {
+ width:100%;
+}
+
+@media(max-width:768px) {
+ .email-signup input {
+   width: 100%;
+   max-width: 100%;
+ }
+}
+
+
+/*Default Responsive Styles (Desktop and below)*/
+
+.mob-show {
+  display: none;
+}
+@media(max-width:48em) {
+  .mob-hide { display: none;}
+  .mob-show { display: block;}
+}
+
+
+
+
+
+
+
